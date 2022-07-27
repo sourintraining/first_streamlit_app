@@ -36,7 +36,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 import snowflake.connector
 
-sudo apt-get install python-cffi
+apt-get install python-cffi
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
