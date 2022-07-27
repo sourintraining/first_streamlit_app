@@ -36,6 +36,8 @@ streamlit.dataframe(fruityvice_normalized)
 
 import snowflake.connector
 
+sudo pip3 install cffi==1.5.2
+
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
